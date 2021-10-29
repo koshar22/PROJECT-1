@@ -1,0 +1,44 @@
+body {
+    background-color: grey;
+    padding: 10px;
+    /* margin: 100px; */
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    grid-gap: 15px;
+}
+.title {
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    grid-auto-rows: 200px;
+    font-size: 40px;
+    text-shadow: #fff 3px 2px 3px;
+    /* text-decoration: underline; */
+}
+.container > .item {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #bbb;
+    border-radius: 2px;
+}
+.container > .item > img {
+    width: 100%;
+    height: 100% ;
+}
+.ex-row {
+    grid-row: auto/ span 2;
+}
+.ex-col {
+    grid-column: auto/ span 2;
+}
+.ex-col2 {
+    grid-column: auto/ span 3;
+}
+.ex-all {
+    grid-column: auto/ span 2;
+    grid-row: auto/ span 2;
+}
